@@ -14,22 +14,9 @@ variable "comman_tags" {
   }
 }
 
-variable "mysql_tags" {
+variable "backend_tags" {
   default = {
-    Component = "mysql"
+    Component = "backend"
   }
 }
 
-variable "rds_tags" {
-  default = {
-    Component = "mysql"
-  }
-}
-
-variable "zone_name" {
-  default = "devops81s.site"
-}
-
-variable "zone_id" {
-  default = "Z0673714ZP6J86LIKLFQ"
-}

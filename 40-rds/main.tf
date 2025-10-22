@@ -61,3 +61,12 @@ module "db" {
     },
   ]
 }
+
+resource "aws_route53_record" "r53" {
+  zone_id = var.zone_id
+  name    = "mysql-${var.environment}.var.zone_name"
+  type    = "CNAME"
+  ttl     = 1
+  records = [module.db.db_instance_address]
+  allow_overwrite = true
+} 

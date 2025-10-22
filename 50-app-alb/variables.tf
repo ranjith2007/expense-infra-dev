@@ -13,16 +13,9 @@ variable "comman_tags" {
     Environment = "dev"
   }
 }
-
-variable "mysql_tags" {
+variable "app_alb_tags" {
   default = {
-    Component = "mysql"
-  }
-}
-
-variable "rds_tags" {
-  default = {
-    Component = "mysql"
+    Component = "app-alb"
   }
 }
 
@@ -30,6 +23,11 @@ variable "zone_name" {
   default = "devops81s.site"
 }
 
-variable "zone_id" {
+variable "zone_r53_id" {
   default = "Z0673714ZP6J86LIKLFQ"
+}  
+
+variable "zone_alb_id" {
+  default = "Z35SXDOTRQ7X7K"
 }
+

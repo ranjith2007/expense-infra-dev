@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket         = "devops81s-remotestate"
-    key            = "expense-bastion-dev"
+    key            = "expense-bastion-development"
     region         = "us-east-1"
     dynamodb_table = "81s-locking"
   }
