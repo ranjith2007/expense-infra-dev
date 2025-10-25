@@ -20,3 +20,6 @@ variable "backend_tags" {
   }
 }
 
+variable "zone_name" {
+  default = "devops81s.site"
+}
